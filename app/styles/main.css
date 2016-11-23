@@ -229,11 +229,6 @@ th {
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-body {
-  /*pointer-events: none;*/
-  /*cursor: default;*/
-}
-
 html {
   font-size: 62.5%;
 }
@@ -254,10 +249,8 @@ a:hover {
 }
 
 header {
-  /*background-color: #000000;*/
   padding-top: 2em;
   padding-bottom: 2em;
-  /*margin-bottom: 2em;*/
   color: rgba(255, 255, 255, 0.88);
 }
 header .pic {
@@ -355,7 +348,6 @@ hr {
 @media (min-width: 1000px) {
   .timeline {
     border-right: 2px solid #225ea8;
-    /*z-index: -2;*/
     min-height: 200px;
     padding-top: 10px;
   }
@@ -366,7 +358,6 @@ hr {
   }
 
   .experience {
-    /*z-index: -1;*/
     border-right: 2px solid #225ea8;
     z-index: -1;
     margin-top: -10px;
@@ -390,7 +381,6 @@ hr {
     height: 15px;
     display: block;
     position: relative;
-    /*top: -36px;*/
     left: 12px;
     float: right;
     border: 4px solid #DDD;
@@ -398,10 +388,7 @@ hr {
     border-radius: 100%;
   }
 }
-/*.skills,
-.education,*/
 footer {
-  /*border-top: 1px solid #000000;*/
   padding: 20px 0;
   position: relative;
   color: rgba(255,255,255,0.9);
@@ -411,12 +398,7 @@ footer a {
   color: rgba(255,255,255,0.9);
 }
 
-/*.columns .special:first-of-type {
-  margin-left: 0px;
-}*/
-
 .special {
-  /*width: 100px;*/
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -428,7 +410,6 @@ footer a {
   background-color: #000;
   color: #fff;
   max-width: 100px;
-  /*margin: 0 20px 20px 0;*/
   display: inline-block;
   text-align: center;
   margin-top: 5px;
@@ -437,8 +418,6 @@ footer a {
 .icon {
   height: 100px;
   width: 100px;
-  /*border-radius: 50px;*/
-  /*background-color: rgba(0,0,0,0.2);*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -460,8 +439,8 @@ footer a {
 }
 
 .ring {
-      display: inline-block;
-  border-radius: 100%;
+display: inline-block;
+border-radius: 100%;
 border-width: 2px;
 border-style: solid;
 border-color: white;
@@ -536,12 +515,6 @@ p {
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 .container {
-  /*position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;*/
 }
 
 .hrline {
@@ -590,8 +563,6 @@ p {
 .accent, .accent-two {
   position: relative;
   padding-bottom: 20px;
-  /*margin-top: 20px;*/
-  /*margin-bottom: 20px;*/
 }
 
 .accent h1, .accent-two h1 {
@@ -634,22 +605,6 @@ div .accent-first {
   color: rgba(255,255,255,0.95);
 }
 
-.header-clip, .accent-two-after, .extra-info-after {
-  -webkit-clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
-  clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
-  -webkit-clip-path: url("#clip-shape");
-  clip-path: url("#clip-shape");
-}
-
-.header-clip {
-    /*content: '';*/
-    /*position: absolute;*/
-    /*z-index: 1;*/
-    height: 40px;
-    width: 100%;
-    /*margin-bottom: 1em;*/
-}
-
 .c1a, .c1b, .c1c, .c2a, .c2b, .c2c, .c3a, .c3b, .c3c, .c4a, .c4b, .c4c, .c5a, .c5b, .c5c {
   width: 100%;
 }
@@ -686,7 +641,6 @@ div .accent-first {
 .c1a {
   height: 50px;
   z-index: 1;
-  /*margin-bottom: -10px;*/
 }
 
 .c2a, .c3a, .c4a, .c5a {
@@ -694,7 +648,6 @@ div .accent-first {
 }
 
 .c2a {
-  /*margin-bottom: -10px;*/
   z-index: 1;
 }
 
@@ -967,53 +920,6 @@ div .accent-first {
   transform: skewX(-1.5deg);
 }
 
-
-/*.accent-after*/
-.accent-before, .accent-after  {
-  /*content: '';*/
-  /*position: absolute;*/
-  /*top: -20px;*/
-  position: relative;
-  height: 20px;
-  width: 100%;
-  -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-   clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-   -webkit-clip-path: url("#clip-shape2");
-   clip-path: url("#clip-shape2");
-   /*z-index: 1;*/
-}
-
-.accent-two-before, .extra-info-before {
-  position: relative;
-  width: 100%;
-  -webkit-clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
-   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
-   -webkit-clip-path: url("#clip-shape3");
-   clip-path: url("#clip-shape3");
-   /*z-index: 1;*/
-   /*content: '';*/
-   /*position: absolute;*/
-}
-
-.accent-two-before {
-  /*top: -20px;*/
-  height: 20px;
-}
-
-.accent-after {
-  top: -20px;
-}
-
-.accent-after, .accent-two-after {
-  /*content: '';*/
-  /*position: absolute;*/
-  /*top: -20px;*/
-  position: relative;
-  height: 20px;
-  width: 100%;
-  /*z-index: 1;*/
-}
-/*trbl*/
 .extra-info {
   position: relative;
   padding: 10px 30px 10px 30px;
@@ -1025,29 +931,13 @@ div .accent-first {
   margin-bottom: 0px;
 }
 
-.extra-info-before {
-  /*top: -15px;*/
-  left: 0px;
-  height: 15px;
-}
-
-.extra-info-after {
-  /*content: '';*/
-  /*position: absolute;*/
-  left: 0px;
-  height: 15px;
-  width: 100%;
-  margin-bottom: 10px;
-  /*z-index: 1;*/
-}
-
 .hide {
   display: none;
 }
 
 .link {
   pointer-events: auto;
-  /*cursor: pointer;*/
+  cursor: pointer;
   color: #225ea8;
   text-decoration: underline;
 }
