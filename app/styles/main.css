@@ -547,14 +547,14 @@ p {
 }
 
 .back-one, .header-clip, .accent-before, .accent-two-before, .accent-two-after, .extra-info, .extra-info-before, .extra-info-after, .c1c, .c2c, .c3c, .c4c, .c5c {
-  background-image: url('../images/b-pat2.svg');
+  background-image: url('../images/bp.svg');
   background-size: cover;
   background-attachment: fixed;
   background-position: left top;
 }
 
 .back-two, .accent-after {
-  background-image: url('../images/b-pat2g2.svg');
+  background-image: url('../images/bpg.svg');
   background-size: cover;
   background-attachment: fixed;
   background-position: left top;
@@ -615,7 +615,7 @@ div .accent-first {
 
 .c1b, .c1c {
   height: 40px;
-  transform-origin: 0% 100%;
+  transform-origin: 100% 100%;
 }
 
 .c2b, .c2c {
@@ -650,13 +650,26 @@ div .accent-first {
 .c2a {
   z-index: 1;
 }
-
-@media (min-width: 200px) and (max-width:299px) {
+@media (min-width: 1px) and (max-width:199px) {
   .c1b {
-    transform: matrix(1,0.1333333,-0.1333333,1,0,-40);
+    transform: matrix(1,0.2,-0.2,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.1333333,0.1333333,1,0,40);
+    transform: matrix(1,-0.2,0.2,1,0,0);
+  }
+  .c2b, .c3c, .c4c, .c5b {
+    transform: matrix(1,0.1,-0.1,1,0,0);
+  }
+  .c2c, .c3b, .c4b, .c5c {
+    transform: matrix(1,-0.1,0.1,1,0,0);
+  }
+}
+@media (min-width: 200px) and (max-width:299px) {
+  .c1b {
+    transform: matrix(1,0.1333333,-0.1333333,1,0,0);
+  }
+  .c1c {
+    transform: matrix(1,-0.1333333,0.1333333,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0666666,-0.0666666,1,0,0);
@@ -667,10 +680,10 @@ div .accent-first {
 }
 @media (min-width: 300px) and (max-width:399px) {
   .c1b {
-    transform: matrix(1,0.0.1,-0.1,1,0,-40);
+    transform: matrix(1,0.1,-0.1,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.1,0.1,1,0,40);
+    transform: matrix(1,-0.1,0.1,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.05,-0.05,1,0,0);
@@ -681,10 +694,10 @@ div .accent-first {
 }
 @media (min-width: 400px) and (max-width:499px) {
   .c1b {
-    transform: matrix(1,0.08,-0.08,1,0,-40);
+    transform: matrix(1,0.08,-0.08,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.08,0.08,1,0,40);
+    transform: matrix(1,-0.08,0.08,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.04,-0.04,1,0,0);
@@ -695,10 +708,10 @@ div .accent-first {
 }
 @media (min-width: 500px) and (max-width:599px) {
   .c1b {
-    transform: matrix(1,0.0666667,-0.0666667,1,0,-40);
+    transform: matrix(1,0.0666667,-0.0666667,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0666667,0.0666667,1,0,40);
+    transform: matrix(1,-0.0666667,0.0666667,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0333333,-0.0333333,1,0,0);
@@ -709,10 +722,10 @@ div .accent-first {
 }
 @media (min-width: 600px) and (max-width:699px) {
   .c1b {
-    transform: matrix(1,0.0571429,-0.0571429,1,0,-40);
+    transform: matrix(1,0.0571429,-0.0571429,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0571429,0.0571429,1,0,40);
+    transform: matrix(1,-0.0571429,0.0571429,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0285714,-0.0285714,1,0,0);
@@ -723,10 +736,10 @@ div .accent-first {
 }
 @media (min-width: 700px) and (max-width:799px) {
   .c1b {
-    transform: matrix(1,0.05,-0.05,1,0,-40);
+    transform: matrix(1,0.05,-0.05,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.05,0.05,1,0,40);
+    transform: matrix(1,-0.05,0.05,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.025,-0.025,1,0,0);
@@ -737,10 +750,10 @@ div .accent-first {
 }
 @media (min-width: 800px) and (max-width:899px) {
   .c1b {
-    transform: matrix(1,0.0444444,-0.0444444,1,0,-40);
+    transform: matrix(1,0.0444444,-0.0444444,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0444444,0.0444444,1,0,40);
+    transform: matrix(1,-0.0444444,0.0444444,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0222222,-0.0222222,1,0,0);
@@ -751,10 +764,10 @@ div .accent-first {
 }
 @media (min-width: 900px) and (max-width:999px) {
   .c1b {
-    transform: matrix(1,0.04,-0.04,1,0,-40);
+    transform: matrix(1,0.04,-0.04,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.04,0.04,1,0,40);
+    transform: matrix(1,-0.04,0.04,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.02,-0.02,1,0,0);
@@ -765,10 +778,10 @@ div .accent-first {
 }
 @media (min-width: 1000px) and (max-width:1099px) {
   .c1b {
-    transform: matrix(1,0.0363636,-0.0363636,1,0,-40);
+    transform: matrix(1,0.0363636,-0.0363636,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0363636,0.0363636,1,0,40);
+    transform: matrix(1,-0.0363636,0.0363636,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0181818,-0.0181818,1,0,0);
@@ -779,10 +792,10 @@ div .accent-first {
 }
 @media (min-width: 1100px) and (max-width:1199px) {
   .c1b {
-    transform: matrix(1,0.0333333,-0.0333333,1,0,-40);
+    transform: matrix(1,0.0333333,-0.0333333,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0333333,0.0333333,1,0,40);
+    transform: matrix(1,-0.0333333,0.0333333,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0166667,-0.0166667,1,0,0);
@@ -793,10 +806,10 @@ div .accent-first {
 }
 @media (min-width: 1200px) and (max-width:1299px) {
   .c1b {
-    transform: matrix(1,0.0307692,-0.0307692,1,0,-40);
+    transform: matrix(1,0.0307692,-0.0307692,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0307692,0.0307692,1,0,40);
+    transform: matrix(1,-0.0307692,0.0307692,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0153846,-0.0153846,1,0,0);
@@ -807,10 +820,10 @@ div .accent-first {
 }
 @media (min-width: 1300px) and (max-width:1399px) {
   .c1b {
-    transform: matrix(1,0.0285714,-0.0285714,1,0,-40);
+    transform: matrix(1,0.0285714,-0.0285714,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0285714,0.0285714,1,0,40);
+    transform: matrix(1,-0.0285714,0.0285714,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0142857,-0.0142857,1,0,0);
@@ -821,10 +834,10 @@ div .accent-first {
 }
 @media (min-width: 1400px) and (max-width:1499px) {
   .c1b {
-    transform: matrix(1,0.0266667,-0.0266667,1,0,-40);
+    transform: matrix(1,0.0266667,-0.0266667,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0266667,0.0266667,1,0,40);
+    transform: matrix(1,-0.0266667,0.0266667,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0133333,-0.0133333,1,0,0);
@@ -835,10 +848,10 @@ div .accent-first {
 }
 @media (min-width: 1500px) and (max-width:1599px) {
   .c1b {
-    transform: matrix(1,0.025,-0.025,1,0,-40);
+    transform: matrix(1,0.025,-0.025,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.025,0.025,1,0,40);
+    transform: matrix(1,-0.025,0.025,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0125,-0.0125,1,0,0);
@@ -849,10 +862,10 @@ div .accent-first {
 }
 @media (min-width: 1600px) and (max-width:1699px) {
   .c1b {
-    transform: matrix(1,0.0235294,-0.0235294,1,0,-40);
+    transform: matrix(1,0.0235294,-0.0235294,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0235294,0.0235294,1,0,40);
+    transform: matrix(1,-0.0235294,0.0235294,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.0117647,-0.0117647,1,0,0);
@@ -863,10 +876,10 @@ div .accent-first {
 }
 @media (min-width: 1700px) and (max-width:1799px) {
   .c1b {
-    transform: matrix(1,0.0222222,-0.0222222,1,0,-40);
+    transform: matrix(1,0.0222222,-0.0222222,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0222222,0.0222222,1,0,40);
+    transform: matrix(1,-0.0222222,0.0222222,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.01111111,-0.01111111,1,0,0);
@@ -877,10 +890,10 @@ div .accent-first {
 }
 @media (min-width: 1800px) and (max-width:1899px) {
   .c1b {
-    transform: matrix(1,0.0210526,-0.0210526,1,0,-40);
+    transform: matrix(1,0.0210526,-0.0210526,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.0210526,0.0210526,1,0,40);
+    transform: matrix(1,-0.0210526,0.0210526,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.01052632,-0.01052632,1,0,0);
@@ -891,10 +904,10 @@ div .accent-first {
 }
 @media (min-width: 1900px) and (max-width:1999px) {
   .c1b {
-    transform: matrix(1,0.02,-0.02,1,0,-40);
+    transform: matrix(1,0.02,-0.02,1,0,0);
   }
   .c1c {
-    transform: matrix(1,-0.02,0.02,1,0,40);
+    transform: matrix(1,-0.02,0.02,1,0,0);
   }
   .c2b, .c3c, .c4c, .c5b {
     transform: matrix(1,0.01,-0.01,1,0,0);
