@@ -1136,6 +1136,13 @@ div .accent-first {
   clear: both;
 }
 
+.download-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
 .resumebutton {
   display: inline-block;
   text-align: center;
