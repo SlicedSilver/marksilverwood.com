@@ -573,6 +573,10 @@ div .accent-first {
   margin-top: 0px;
 }
 
+.icon img {
+  width: 100%;
+}
+
 .svg-fill {
   width: 100%;
   height: 20px;

@@ -89,3 +89,5 @@ if (isFirefox) {
   });
   backFix();
 }
+
+window.sr = ScrollReveal().reveal('.special', {reset: true, delay: 200}, 100);
